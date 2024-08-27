@@ -2,7 +2,7 @@
 
 <img src="multiagent.png" alt="GenAI Career Assistant Architecture" width="500">
 
-**Author**: [Aman Varyani](https://medium.com/@amanvaryani)
+**Author**: [Aman Varyani](https://medium.com/@amanvaryani1910)
 
 Welcome to the GenAI Career Assistant, a powerful tool designed to revolutionize the job search process using cutting-edge AI technology. This project leverages a multi-agent architecture to provide personalized career guidance, making job hunting more efficient and tailored to individual needs.
 
