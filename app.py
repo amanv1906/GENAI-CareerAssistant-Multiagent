@@ -24,6 +24,7 @@ os.environ["LANGCHAIN_PROJECT"] = st.secrets.get("LANGCHAIN_PROJECT", "")
 os.environ["GROQ_API_KEY"] = st.secrets.get("GROQ_API_KEY", "")
 os.environ["SERPER_API_KEY"] = st.secrets.get("SERPER_API_KEY", "")
 os.environ["FIRECRAWL_API_KEY"] = st.secrets.get("FIRECRAWL_API_KEY", "")
+os.environ["LINKEDIN_SEARCH"] = st.secrets.get("LINKEDIN_JOB_SEARCH")
 
 # Page configuration
 st.set_page_config(layout="wide")
@@ -211,7 +212,7 @@ with input_section:
         "Analyze my resume and suggest a suitable job role and search for relevant job listings",
         "Generate a cover letter for my resume.",
     ]
-    icons = ["🔍", "🌐", "📝", "📈", "💼", "🌟", "✉️", "🧠"]
+    icons = ["🔍", "🌐", "📝", "📈", "💼", "🌟", "✉️", "🧠  "]
 
     selected_query = pills(
         "Pick a question for query:",
