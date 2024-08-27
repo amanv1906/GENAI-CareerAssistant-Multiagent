@@ -1,0 +1,17 @@
+pypdf
+langchain
+langgraph
+langchain-openai
+langchain-groq
+python-dotenv
+linkedin-api
+streamlit
+langsmith
+streamlit_chat
+streamlit_pills
+langchain_community
+firecrawl-py
+pymupdf
+streamlit-analytics2
+python-docx
+asgiref
