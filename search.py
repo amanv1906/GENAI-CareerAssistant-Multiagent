@@ -1,7 +1,6 @@
 import aiohttp
 import os
 import urllib
-import ssl
 import asyncio
 import requests
 from typing import List, Literal, Union, Optional
@@ -208,38 +207,6 @@ def get_job_ids(
     return []
 
 
-async def get_job_details_from_linkedin_api(job_id):
-    api = Linkedin(os.getenv("LINKEDIN_EMAIL"), os.getenv("LINKEDIN_PASS"))
-    job_data = await sync_to_async(api.get_job)(
-        job_id
-    )  # Assuming this function is async and fetches job data
-
-    # Construct the job data dictionary with defaults
-    job_data_dict = {
-        "company_name": job_data.get("companyDetails", {})
-        .get(
-            "com.linkedin.voyager.deco.jobs.web.shared.WebCompactJobPostingCompany",
-            {},
-        )
-        .get("companyResolutionResult", {})
-        .get("name", ""),
-        "company_url": job_data.get("companyDetails", {})
-        .get(
-            "com.linkedin.voyager.deco.jobs.web.shared.WebCompactJobPostingCompany",
-            {},
-        )
-        .get("companyResolutionResult", {})
-        .get("url", ""),
-        "job_desc_text": job_data.get("description", {}).get("text", ""),
-        "work_remote_allowed": job_data.get("workRemoteAllowed", ""),
-        "job_title": job_data.get("title", ""),
-        "company_apply_url": job_data.get("applyMethod", {})
-        .get("com.linkedin.voyager.jobs.OffsiteApply", {})
-        .get("companyApplyUrl", ""),
-        "job_location": job_data.get("formattedLocation", ""),
-    }
-
-
 async def fetch_job_details(session, job_id):
     # Construct the URL for each job using the job ID
     job_url = f"https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/{job_id}"
@@ -318,7 +285,7 @@ async def fetch_job_details(session, job_id):
         return job_post
 
 
-async def get_job_details(job_id):
+async def get_job_details_from_linkedin_api(job_id):
     try:
         api = Linkedin(os.getenv("LINKEDIN_EMAIL"), os.getenv("LINKEDIN_PASS"))
         job_data = await sync_to_async(api.get_job)(
