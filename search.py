@@ -187,7 +187,7 @@ def get_job_ids(
 
         # Send a GET request to the URL and store the response
         response = requests.get(
-            job_url, timeout=30, headers={"User-Agent": "Mozilla/5.0"}, verify=False
+            job_url, timeout=30, headers={"User-Agent": "Mozilla/5.0"}
         )
 
         # Get the HTML, parse the response and find all list items(jobs postings)
