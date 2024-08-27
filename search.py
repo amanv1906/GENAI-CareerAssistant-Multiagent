@@ -245,7 +245,7 @@ async def fetch_job_details(session, job_id):
     job_url = f"https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/{job_id}"
 
     # Send a GET request to the job URL
-    async with session.get(job_url, ssl=False) as response:
+    async with session.get(job_url) as response:
         job_soup = BeautifulSoup(await response.text(), "html.parser")
 
         # Create a dictionary to store job details
