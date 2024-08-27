@@ -208,7 +208,7 @@ with input_section:
         "Summarize my resume",
         "Create a career path visualization based on my skills and interests from my resume",
         "GenAI Jobs at Microsoft",
-        "Search GenAI jobs in India",
+        "Job Search GenAI jobs in India.",
         "Analyze my resume and suggest a suitable job role and search for relevant job listings",
         "Generate a cover letter for my resume.",
     ]
