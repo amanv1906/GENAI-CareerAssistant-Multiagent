@@ -118,7 +118,7 @@ st.sidebar.markdown(
     """
     <div style="padding:10px 0;">
         If you like the project, give a 
-        <a href="https://github.com/amanv1906/GenAI-Career-Assistant" target="_blank" style="text-decoration:none;">
+        <a href="https://github.com/amanv1906/GENAI-CareerAssistant-Multiagent" target="_blank" style="text-decoration:none;">
             ⭐ on GitHub
         </a>
     </div>
