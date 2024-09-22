@@ -62,8 +62,6 @@ class ResumeExtractorTool(BaseTool):
     Returns:
         dict: The extracted content of the resume.
     """
-
-    name = "ResumeExtractor"
     description = "Extract the content of uploaded resume from a PDF file."
 
     def extract_resume(self) -> str:
