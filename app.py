@@ -129,12 +129,11 @@ st.sidebar.markdown(
     """
     <div style="padding:10px 0;">
         Connect with me on
-        <a href="www.linkedin.com/in/aman-varyani-885725181/" target="_blank" style="text-decoration:none;">
+        <a href="https://www.linkedin.com/in/aman-varyani-885725181/" target="_blank" style="text-decoration:none;">
             Linkedin
         </a>
     </div>
-    """,
-    unsafe_allow_html=True,
+    """
 )
 st.sidebar.markdown("[Connect with me on LinkedIn](www.linkedin.com/in/aman-varyani-885725181/)", unsafe_allow_html=True)
 
