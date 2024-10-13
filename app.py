@@ -29,6 +29,7 @@ os.environ["LINKEDIN_SEARCH"] = st.secrets.get("LINKEDIN_JOB_SEARCH", "")
 # Page configuration
 st.set_page_config(layout="wide")
 st.title("GenAI Career Assistant - 👨‍💼")
+st.markdown("[Connect with me on LinkedIn](https://www.linkedin.com/in/aman-varyani-885725181/)")
 
 streamlit_analytics.start_tracking()
 
@@ -125,7 +126,6 @@ st.sidebar.markdown(
     """,
     unsafe_allow_html=True,
 )
-st.sidebar.markdown("[Connect with me on LinkedIn](https://www.linkedin.com/in/aman-varyani-885725181/)")
 
 # Create the agent flow
 flow_graph = define_graph()
