@@ -125,6 +125,17 @@ st.sidebar.markdown(
     """,
     unsafe_allow_html=True,
 )
+st.sidebar.markdown(
+    """
+    <div style="padding:10px 0;">
+        Connect on
+        <a href="https://www.linkedin.com/in/aman-varyani-885725181/" target="_blank" style="text-decoration:none;">
+           linkedin
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 
 # Create the agent flow
 flow_graph = define_graph()
