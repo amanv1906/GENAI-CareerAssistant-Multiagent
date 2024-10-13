@@ -125,6 +125,7 @@ st.sidebar.markdown(
     """,
     unsafe_allow_html=True,
 )
+st.sidebar.markdown(“[![Title](‘https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg’)](‘www.linkedin.com/in/aman-varyani-885725181/’)”)
 
 # Create the agent flow
 flow_graph = define_graph()
