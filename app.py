@@ -180,7 +180,7 @@ def execute_chat_conversation(user_input, graph):
                 "config": settings,
                 "callback": callback_handler,
             },
-            {"recursion_limit": 100},
+            {"recursion_limit": 30},
         )
         message_output = output.get("messages")[-1]
         messages_list = output.get("messages")
