@@ -1,6 +1,6 @@
 from ast import List
 from typing import Literal, Optional, List, Union
-from langchain.pydantic_v1 import BaseModel, Field
+from pydantic import BaseModel, Field
 
 
 class RouteSchema(BaseModel):
